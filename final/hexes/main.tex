@@ -1,0 +1,85 @@
+\documentclass[a4paper]{article}
+
+%%% Поля и разметка страницы %%%
+\usepackage{pdflscape} % Для включения альбомных страниц
+\usepackage{geometry}  % Для последующего задания полей
+\usepackage{fancyhdr}
+
+%%% Выбор компилятора, кодировок для вёрстки (pdflatex, xelatex)
+\usepackage{ifxetex}
+\ifxetex
+    \usepackage{polyglossia} % Поддержка многоязычности
+\else
+    \usepackage[T2A]{fontenc}
+    \usepackage[utf8]{inputenc}
+    % Поддержка русского языка (переносы, стилистика и т. д.)
+    \usepackage[english, russian]{babel}
+\fi
+
+% Векторная графика
+\usepackage{tikz}
+
+%%% Изображения %%%
+\usepackage{graphicx}
+
+%%% Выравнивание и переносы %%%
+% \sloppy % Избавляемся от переполнений
+% \clubpenalty=10000 % Запрещаем разрыв страницы после первой строки абзаца
+% \widowpenalty=10000 % Запрещаем разрыв страницы после последней строки абзаца
+
+\setlength{\parindent}{0pt} % Абзацный отступ
+
+% Значения отступов полей
+\geometry{a4paper,%
+  top = 10mm,%
+  bottom = 15mm,%
+  left = 10mm,%
+  right = 10mm%
+}
+
+%%% Кодировки и шрифты %%%
+\ifxetex{}
+    \setmainlanguage[babelshorthands=true]{russian}  % Язык по-умолчанию русский
+    \setotherlanguage{english}                       % Дополнительный язык
+                                                     % английский
+
+    \defaultfontfeatures{Ligatures=TeX,Mapping=tex-text}
+    \setmainfont{Times New Roman}
+    \newfontfamily\cyrillicfont{Times New Roman}
+
+    \setsansfont{Arial}
+    \newfontfamily\cyrillicfontsf{Arial}
+
+    \setmonofont{TerminusTTF}
+    \newfontfamily\cyrillicfonttt{TerminusTTF}
+\fi
+
+\renewcommand{\headrulewidth}{0pt}
+
+\input{./pictures.tex}
+
+\begin{document}
+
+\input{./deep_space.tex}
+
+\newpage%
+
+\input{./deep_space_reverse.tex}
+
+\newpage%
+
+\input{./home.tex}
+
+\newpage%
+
+\input{./home_reverse.tex}
+
+\newpage%
+
+\input{./mix.tex}
+
+\newpage%
+
+\input{./mix_reverse.tex}
+
+\end{document}

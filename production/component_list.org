@@ -1,0 +1,223 @@
+#+TITLE: Space Empires: 4X. Component list
+#+AUTHOR: saruman9
+#+LANGUAGE: en
+#+STARTUP: hidestars indent nologdone
+#+OPTIONS: title:nil
+
+* DONE Counter manifest
+
+- [X] Numeral markers (136) [rule 2.4] [3/3]
+  - [X] 1/2 (72)
+  - [X] 3/4 (40)
+  - [X] 5/6 (24)
+- [X] Damage Markers (6) [rule 2.6]
+- [X] Battle Marker (1) [rule 5.1.2]
+- [X] Turn Marker (1) [rule 3.0]
+- [X] Alien Ship Markers (40) [rule 14.0] [3/3]
+  - [X] B6-2 (10)
+  - [X] C5-2 (20)
+  - [X] D4-1 (10)
+
+* DONE Group Units [rule 2.3]
+
+- [X] Bases (8) [4/4]
+  - [X] blue (2)
+  - [X] green (2)
+  - [X] red (2)
+  - [X] yellow (2)
+- [X] BB-Battleships (16) [4/4]
+  - [X] blue (4)
+  - [X] green (4)
+  - [X] red (4)
+  - [X] yellow (4)
+- [X] BC-Battlecruisers (16) [4/4]
+  - [X] blue (4)
+  - [X] green (4)
+  - [X] red (4)
+  - [X] yellow (4)
+- [X] CA-Cruisers (16) [4/4]
+  - [X] blue (4)
+  - [X] green (4)
+  - [X] red (4)
+  - [X] yellow (4)
+- [X] CV-Carriers (16) [4/4]
+  - [X] blue (4)
+  - [X] green (4)
+  - [X] red (4)
+  - [X] yellow (4)
+- [X] DD-Destroyers (16) [4/4]
+  - [X] blue (4)
+  - [X] green (4)
+  - [X] red (4)
+  - [X] yellow (4)
+- [X] DN-Dreadnaughts (8) [4/4]
+  - [X] blue (2)
+  - [X] green (2)
+  - [X] red (2)
+  - [X] yellow (2)
+- [X] F-Fighter-Squadrons (32) [4/4]
+  - [X] blue (8)
+  - [X] green (8)
+  - [X] red (8)
+  - [X] yellow (8)
+- [X] R-Raiders (16) [4/4]
+  - [X] blue (4)
+  - [X] green (4)
+  - [X] red (4)
+  - [X] yellow (4)
+- [X] SC-Scouts (20) [4/4]
+  - [X] blue (5)
+  - [X] green (5)
+  - [X] red (5)
+  - [X] yellow (5)
+- [X] SW-Mine-Sweepers (12) [4/4]
+  - [X] blue (3)
+  - [X] green (3)
+  - [X] red (3)
+  - [X] yellow (3)
+- [X] SY-Ship Yards (16) [4/4]
+  - [X] blue (4)
+  - [X] green (4)
+  - [X] red (4)
+  - [X] yellow (4)
+- [X] Decoy Markers (8) [4/4]
+  - [X] blue (2)
+  - [X] green (2)
+  - [X] red (2)
+  - [X] yellow (2)
+
+* DONE Non-Group Units [rule 2.5]
+
+- [X] Colony Ships (60) [4/4]
+  - [X] blue (15)
+  - [X] green (15)
+  - [X] red (15)
+  - [X] yellow (15)
+- [X] Miners (8) [4/4]
+  - [X] blue (2)
+  - [X] green (2)
+  - [X] red (2)
+  - [X] yellow (2)
+- [X] MS Pipeline Ships (80) [4/4]
+  - [X] blue (20)
+  - [X] green (20)
+  - [X] red (20)
+  - [X] yellow (20)
+
+* DONE Home, Homeworlds and Colonies
+
+- [X] Homeworld counters, 20 value (front) and 15 value (back) (4) [rule 2.7] [4/4]
+  - [X] blue (1)
+  - [X] green (1)
+  - [X] red (1)
+  - [X] yellow (1)
+- [X] Home counters, 10 value (front) and 5 value (back) (4) [rule 2.8] [4/4]
+  - [X] blue (1)
+  - [X] green (1)
+  - [X] red (1)
+  - [X] yellow (1)
+- [X] Colony Markers, 1 value (front) and 3 value (back) (29) [rule 2.8]
+  29 gray or colors?:
+
+* DONE Mines [rule 13.0]
+
+- [X] Mines (20)
+  - [X] blue (5)
+  - [X] green (5)
+  - [X] red (5)
+  - [X] yellow (5)
+
+* DONE Deep Space System Markers [rule 2.1] (white/gray border)
+
+- [X] Nebula Markers (10)
+- [X] Supernova Markers (3)
+- [X] Mineral-10 Markers (14)
+- [X] Lost in Space Markers (5)
+- [X] Doomsday Machine Markers [rule 17] (3)
+- [X] Danger! Markers (26)
+- [X] Black Hole Markers (10)
+- [X] Warp Point-1 Markers (3)
+- [X] Warp Point-2 Markers (3)
+- [X] Space Wreck Markers (3)
+- [X] Asteroids Markers (10)
+- [X] Barren planet Markers (12) [12/12]
+  - [X] Abydos
+  - [X] Ada
+  - [X] Aries
+  - [X] Arrakis
+  - [X] Babbage
+  - [X] Centauri
+  - [X] Cobol
+  - [X] Cygni
+  - [X] Deneb
+  - [X] Gath
+  - [X] Romulus
+  - [X] Rukbat
+
+* DONE Home System Markers [rule 2.1]
+
+- [X] Home Planet Markers (4) [4/4]
+  - [X] Altair
+  - [X] Chulak
+  - [X] Terra
+  - [X] Vasyr
+- [X] Nebula Markers (8) [4/4]
+  - [X] blue (2)
+  - [X] green (2)
+  - [X] red (2)
+  - [X] yellow (2)
+- [X] Asteroids Markers (8) [4/4]
+  - [X] blue (2)
+  - [X] green (2)
+  - [X] red (2)
+  - [X] yellow (2)
+- [X] Mineral 5 Markers (44) [4/4]
+  - [X] blue (11)
+  - [X] green (11)
+  - [X] red (11)
+  - [X] yellow (11)
+- [X] Black Hole Marker (4) [4/4]
+  - [X] blue (1)
+  - [X] green (1)
+  - [X] red (1)
+  - [X] yellow (1)
+- [X] Planet Markers Blue system (8) [8/8]
+  - [X] Andromeda
+  - [X] Bethel
+  - [X] Eden
+  - [X] Odyssey
+  - [X] Orion
+  - [X] Prometheus
+  - [X] Rigel
+  - [X] Vulcan
+- [X] Barren Planet Marker Blue system: Polaris (1)
+- [X] Planet Markers Yellow system (8) [8/8]
+  - [X] Arcturus
+  - [X] Aslak
+  - [X] Benden
+  - [X] Haldir
+  - [X] Tempe
+  - [X] Valhalla
+  - [X] Vega
+  - [X] Xi
+- [X] Barren Planet Marker Yellow system: Draconis (1)
+- [X] Planet Markers Green system (8) [8/8]
+  - [X] Bajor
+  - [X] Castor
+  - [X] Dakara
+  - [X] Eccles
+  - [X] Kronos
+  - [X] Pleiades
+  - [X] Pollux
+  - [X] Sirius
+- [X] Barren Planet Marker Green system: Hoth (1)
+- [X] Planet Markers Red system (8) [8/8]
+  - [X] Anthares
+  - [X] Athos
+  - [X] Cerberus
+  - [X] Essen
+  - [X] Fionn
+  - [X] Omicron
+  - [X] Sheldon
+  - [X] Vortigern
+- [X] Barren Planet Marker Red system: Anyon (1)

@@ -1,0 +1,468 @@
+\newcommand{\fillshape}[3]{%
+  \begin{scope}
+    \clip #1;
+    \node {\includegraphics[#3]{#2}};
+  \end{scope}
+  \draw[line width=0.0mm] #1;
+}
+
+\newcommand{\fillhexagon}[2][]{%
+  \fillshape{(0:2.81) -- (60:2.81) -- (120:2.81) -- (180:2.81) -- (240:2.81) -- (300:2.81) --
+    cycle}{#2}{#1}%
+}
+
+\newcommand{\picturePage}[9]{%
+  \begin{tikzpicture}
+    \begin{scope}
+      #1%
+    \end{scope}
+    \begin{scope}[xshift=42.3mm,yshift=-24.3mm]%
+      #2%
+    \end{scope}
+    \begin{scope}[xshift=84.6mm]%
+      #3%
+    \end{scope}
+    \begin{scope}[xshift=126.9mm,yshift=-24.3mm]%
+      #4%
+    \end{scope}
+
+    \begin{scope}[yshift=-48.8mm]
+      #5%
+    \end{scope}
+    \begin{scope}[xshift=42.3mm,yshift=-73.1mm]%
+      #6%
+    \end{scope}
+    \begin{scope}[xshift=84.6mm,yshift=-48.8mm]%
+      #7%
+    \end{scope}
+    \begin{scope}[xshift=126.9mm,yshift=-73.1mm]%
+      #8%
+    \end{scope}
+
+    \begin{scope}[yshift=2*-48.8mm]
+      #9%
+    \end{scope}
+
+    \picturePageContFirst%
+}
+
+\newcommand{\picturePageContFirst}[9]{%
+    \begin{scope}[xshift=42.3mm,yshift=2*-48.8mm-24.3mm]%
+      #1%
+    \end{scope}
+    \begin{scope}[xshift=84.6mm,yshift=2*-48.8mm]%
+      #2%
+    \end{scope}
+    \begin{scope}[xshift=126.9mm,yshift=2*-48.8mm-24.3mm]%
+      #3%
+    \end{scope}
+
+    \begin{scope}[yshift=3*-48.8mm]
+      #4%
+    \end{scope}
+    \begin{scope}[xshift=42.3mm,yshift=3*-48.8mm-24.3mm]%
+      #5%
+    \end{scope}
+    \begin{scope}[xshift=84.6mm,yshift=3*-48.8mm]%
+      #6%
+    \end{scope}
+    \begin{scope}[xshift=126.9mm,yshift=3*-48.8mm-24.3mm]%
+      #7%
+    \end{scope}
+
+    \begin{scope}[yshift=4*-48.8mm]
+      #8%
+    \end{scope}
+    \begin{scope}[xshift=42.3mm,yshift=4*-48.8mm-24.3mm]%
+      #9%
+    \end{scope}
+
+    \picturePageContSecond%
+}
+
+\newcommand{\picturePageContSecond}[2]{%
+    \begin{scope}[xshift=84.6mm,yshift=4*-48.8mm]%
+      #1%
+    \end{scope}
+    \begin{scope}[xshift=126.9mm,yshift=4*-48.8mm-24.3mm]%
+      #2%
+    \end{scope}
+
+  \end{tikzpicture}
+}
+
+\newcommand{\picturePageReverse}[9]{%
+  \begin{tikzpicture}
+    \begin{scope}[yshift=-24.3mm]%
+      #1%
+    \end{scope}
+    \begin{scope}[xshift=42.3mm]%
+      #2%
+    \end{scope}
+    \begin{scope}[xshift=84.6mm,yshift=-24.3mm]%
+      #3%
+    \end{scope}
+    \begin{scope}[xshift=126.9mm]%
+      #4%
+    \end{scope}
+
+    \begin{scope}[yshift=-48.8mm-24.3mm]
+      #5%
+    \end{scope}
+    \begin{scope}[xshift=42.3mm,yshift=-48.8mm]%
+      #6%
+    \end{scope}
+    \begin{scope}[xshift=84.6mm,yshift=-48.8mm-24.3mm]%
+      #7%
+    \end{scope}
+    \begin{scope}[xshift=126.9mm,yshift=-48.8mm]%
+      #8%
+    \end{scope}
+
+    \begin{scope}[yshift=2*-48.8mm-24.3mm]
+      #9%
+    \end{scope}
+
+    \picturePageReverseContFirst%
+}
+
+\newcommand{\picturePageReverseContFirst}[9]{%
+    \begin{scope}[xshift=42.3mm,yshift=2*-48.8mm]%
+      #1%
+    \end{scope}
+    \begin{scope}[xshift=84.6mm,yshift=2*-48.8mm-24.3mm]%
+      #2%
+    \end{scope}
+    \begin{scope}[xshift=126.9mm,yshift=2*-48.8mm]%
+      #3%
+    \end{scope}
+
+    \begin{scope}[yshift=3*-48.8mm-24.3mm]
+      #4%
+    \end{scope}
+    \begin{scope}[xshift=42.3mm,yshift=3*-48.8mm]%
+      #5%
+    \end{scope}
+    \begin{scope}[xshift=84.6mm,yshift=3*-48.8mm-24.3mm]%
+      #6%
+    \end{scope}
+    \begin{scope}[xshift=126.9mm,yshift=3*-48.8mm]%
+      #7%
+    \end{scope}
+
+    \begin{scope}[yshift=4*-48.8mm-24.3mm]
+      #8%
+    \end{scope}
+    \begin{scope}[xshift=42.3mm,yshift=4*-48.8mm]%
+      #9%
+    \end{scope}
+
+    \picturePageReverseContSecond%
+}
+
+\newcommand{\picturePageReverseContSecond}[2]{%
+    \begin{scope}[xshift=84.6mm,yshift=4*-48.8mm-24.3mm]%
+      #1%
+    \end{scope}
+    \begin{scope}[xshift=126.9mm,yshift=4*-48.8mm]%
+      #2%
+    \end{scope}
+
+  \end{tikzpicture}
+}
+
+\newcommand{\asteroids}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/asteroids.png}
+}
+
+\newcommand{\nebula}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/nebula.png}
+}
+
+\newcommand{\supernova}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/supernova.png}
+}
+
+\newcommand{\minerals}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/minerals.png}
+}
+
+\newcommand{\lostInSpace}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/lost_in_space.png}
+}
+
+\newcommand{\doomsdayMachineFirst}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/doomsday_machine_1.png}
+}
+
+\newcommand{\doomsdayMachineSecond}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/doomsday_machine_2.png}
+}
+
+\newcommand{\doomsdayMachineThird}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/doomsday_machine_3.png}
+}
+
+\newcommand{\danger}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/danger.png}
+}
+
+\newcommand{\blackHole}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/black_hole.png}
+}
+
+\newcommand{\warpPointFirst}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/warp_point_1.png}
+}
+
+\newcommand{\warpPointSecond}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/warp_point_2.png}
+}
+
+\newcommand{\spaceWreck}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/space_wreck.png}
+}
+
+\newcommand{\abydos}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/planets/abydos.png}
+}
+\newcommand{\ada}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/planets/ada.png}
+}
+\newcommand{\aries}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/planets/aries.png}
+}
+\newcommand{\arrakis}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/planets/arrakis.png}
+}
+\newcommand{\babbage}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/planets/babbage.png}
+}
+\newcommand{\centauri}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/planets/centauri.png}
+}
+\newcommand{\cobol}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/planets/cobol.png}
+}
+\newcommand{\cygni}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/planets/cygni.png}
+}
+\newcommand{\deneb}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/planets/deneb.png}
+}
+\newcommand{\gath}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/planets/gath.png}
+}
+\newcommand{\romulus}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/planets/romulus.png}
+}
+\newcommand{\rukbat}{%
+  \fillhexagon[]{../../production/hexes/deep_space_tiles/planets/rukbat.png}
+}
+
+\newcommand{\reverseStub}{%
+  \fillhexagon[]{../../production/hexes/reverse/border_reverse_gray.png}
+}
+\newcommand{\reverseGray}{%
+  \fillhexagon[]{../../production/hexes/reverse/reverse_gray.png}
+}
+\newcommand{\reverseGreen}{%
+  \fillhexagon[]{../../production/hexes/reverse/reverse_green.png}
+}
+\newcommand{\reverseBlue}{%
+  \fillhexagon[]{../../production/hexes/reverse/reverse_blue.png}
+}
+\newcommand{\reverseRed}{%
+  \fillhexagon[]{../../production/hexes/reverse/reverse_red.png}
+}
+\newcommand{\reverseYellow}{%
+  \fillhexagon[]{../../production/hexes/reverse/reverse_yellow.png}
+}
+\newcommand{\altairRed}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/homeworlds/altair_red.png}
+}
+\newcommand{\altairRedReverse}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/homeworlds/altair_red_reverse.png}
+}
+\newcommand{\chulakGreen}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/homeworlds/chulak_green.png}
+}
+\newcommand{\chulakGreenReverse}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/homeworlds/chulak_green_reverse.png}
+}
+\newcommand{\terraBlue}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/homeworlds/terra_blue.png}
+}
+\newcommand{\terraBlueReverse}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/homeworlds/terra_blue_reverse.png}
+}
+\newcommand{\vasyrYellow}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/homeworlds/vasyr_yellow.png}
+}
+\newcommand{\vasyrYellowReverse}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/homeworlds/vasyr_yellow_reverse.png}
+}
+
+\newcommand{\nebulaBlue}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/nebula/nebula_blue.png}
+}
+\newcommand{\nebulaGreen}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/nebula/nebula_green.png}
+}
+\newcommand{\nebulaRed}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/nebula/nebula_red.png}
+}
+\newcommand{\nebulaYellow}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/nebula/nebula_yellow.png}
+}
+
+\newcommand{\asteroidsBlue}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/asteroids/asteroids_blue.png}
+}
+\newcommand{\asteroidsGreen}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/asteroids/asteroids_green.png}
+}
+\newcommand{\asteroidsRed}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/asteroids/asteroids_red.png}
+}
+\newcommand{\asteroidsYellow}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/asteroids/asteroids_yellow.png}
+}
+
+\newcommand{\mineralsBlue}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/minerals/minerals_5_blue.png}
+}
+\newcommand{\mineralsGreen}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/minerals/minerals_5_green.png}
+}
+\newcommand{\mineralsRed}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/minerals/minerals_5_red.png}
+}
+\newcommand{\mineralsYellow}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/minerals/minerals_5_yellow.png}
+}
+
+\newcommand{\blackHoleBlue}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/black_hole/black_hole_blue.png}
+}
+\newcommand{\blackHoleGreen}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/black_hole/black_hole_green.png}
+}
+\newcommand{\blackHoleRed}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/black_hole/black_hole_red.png}
+}
+\newcommand{\blackHoleYellow}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/black_hole/black_hole_yellow.png}
+}
+
+\newcommand{\andromeda}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/blue/andromeda.png}
+}
+\newcommand{\barrenBlue}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/blue/barren.png}
+}
+\newcommand{\bethel}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/blue/bethel.png}
+}
+\newcommand{\eden}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/blue/eden.png}
+}
+\newcommand{\odyssey}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/blue/odyssey.png}
+}
+\newcommand{\orion}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/blue/orion.png}
+}
+\newcommand{\prometheus}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/blue/prometheus.png}
+}
+\newcommand{\rigel}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/blue/rigel.png}
+}
+\newcommand{\vulcan}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/blue/vulcan.png}
+}
+
+\newcommand{\bajor}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/green/bajor.png}
+}
+\newcommand{\barrenGreen}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/green/barren.png}
+}
+\newcommand{\castor}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/green/castor.png}
+}
+\newcommand{\dakara}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/green/dakara.png}
+}
+\newcommand{\eccles}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/green/eccles.png}
+}
+\newcommand{\kronos}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/green/kronos.png}
+}
+\newcommand{\pleiades}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/green/pleiades.png}
+}
+\newcommand{\pollux}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/green/pollux.png}
+}
+\newcommand{\sirius}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/green/sirius.png}
+}
+
+\newcommand{\anthares}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/red/anthares.png}
+}
+\newcommand{\athos}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/red/athos.png}
+}
+\newcommand{\barrenRed}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/red/barren.png}
+}
+\newcommand{\cerberus}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/red/cerberus.png}
+}
+\newcommand{\essen}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/red/essen.png}
+}
+\newcommand{\fionn}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/red/fionn.png}
+}
+\newcommand{\omicron}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/red/omicron.png}
+}
+\newcommand{\sheldon}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/red/sheldon.png}
+}
+\newcommand{\vortigern}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/red/vortigern.png}
+}
+
+\newcommand{\arcturus}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/yellow/arcturus.png}
+}
+\newcommand{\aslak}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/yellow/aslak.png}
+}
+\newcommand{\barrenYellow}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/yellow/barren.png}
+}
+\newcommand{\benden}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/yellow/benden.png}
+}
+\newcommand{\haldir}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/yellow/haldir.png}
+}
+\newcommand{\tempe}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/yellow/tempe.png}
+}
+\newcommand{\valhalla}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/yellow/valhalla.png}
+}
+\newcommand{\vega}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/yellow/vega.png}
+}
+\newcommand{\xiYellow}{%
+  \fillhexagon[]{../../production/hexes/home_system_tiles/planets/yellow/xi.png}
+}
